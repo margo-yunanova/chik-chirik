@@ -7,7 +7,7 @@
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 10px;
   grid-template-areas: "subtitle-left subtitle-right" "title-left title-right" "text-left text-right";
-  max-width: 1090px;
+  max-width: 1150px;
   overflow-x: auto;
 }
 @media (min-width: 795px) {
