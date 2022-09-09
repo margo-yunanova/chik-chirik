@@ -5,26 +5,18 @@
   margin-top: 70px;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 100%);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 10px;
   grid-template-areas:
-    "subtitle-left"
-    "title-left"
-    "text-left";
-  min-height: 284px;
+    "subtitle-left subtitle-right"
+    "title-left title-right"
+    "text-left text-right";
   max-width: 1090px;
+  overflow-x: auto;
 
   @media (min-width: $landscapePhone) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "subtitle-left subtitle-right"
-      "title-left title-right"
-      "text-left text-right";
-    grid-column-gap: 10px;
-  }
-
-  @media (min-width: $bigScreen) {
-    min-height: 308px;
   }
 
   &__item {
@@ -34,8 +26,7 @@
 
   &__subtitle {
     margin: 0;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px 20px 12px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -53,20 +44,18 @@
     }
 
     @media (min-width: $landscapePhone) {
-      padding-top: 30px;
-      padding-left: 30px;
+      padding: 30px 30px 12px;
     }
 
     @media (min-width: $bigScreen) {
       font-size: 18px;
-      padding-top: 40px;
-      padding-left: 40px;
+      padding: 40px 40px 20px;
     }
   }
 
   &__title {
     margin: 0;
-    padding-left: 20px;
+    padding: 0 20px 50px;
     font-weight: 600;
     font-size: 26px;
     line-height: 31px;
@@ -82,20 +71,19 @@
     }
 
     @media (min-width: $landscapePhone) {
-      padding-left: 30px;
+      padding: 0 30px 50px;
     }
 
     @media (min-width: $bigScreen) {
       font-size: 32px;
       line-height: 38px;
-      padding-left: 40px;
+      padding: 0 40px 40px;
     }
   }
 
   &__text {
     margin: 0;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 0 20px 20px;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
@@ -113,15 +101,13 @@
     }
 
     @media (min-width: $landscapePhone) {
-      padding-left: 30px;
-      padding-bottom: 30px;
+      padding: 0 30px 30px;
     }
 
     @media (min-width: $bigScreen) {
       font-size: 16px;
       line-height: 24px;
-      padding-left: 40px;
-      padding-bottom: 40px;
+      padding: 0 40px 40px;
     }
   }
 }
