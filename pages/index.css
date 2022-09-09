@@ -2,4 +2,6 @@
 @import url("../vendor/fonts.css");
 @import url("../blocks/header.css");
 @import url("../blocks/page.css");
-@import url("../blocks/app-description.css");/*# sourceMappingURL=index.css.map */
+@import url("../blocks/app-description.css");
+@import url("../blocks/app-promo.css");
+@import url("../blocks/section__title.css");/*# sourceMappingURL=index.css.map */

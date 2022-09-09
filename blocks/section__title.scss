@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.section__title {
+  font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    color: #111111;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0;
+
+    @media (min-width: $landscapePhone) {
+      font-size: 33px;
+      line-height: 37px;
+    }
+
+    @media (min-width: $bigScreen) {
+      font-size: 60px;
+      line-height: 68px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+}
