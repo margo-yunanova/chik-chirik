@@ -1,0 +1,90 @@
+@use "variables" as *;
+
+.form {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 74px 74px 104px 74px;
+  grid-template-areas:
+    "name"
+    "email"
+    "message"
+    "button";
+  row-gap: 20px;
+
+  @media (min-width: $landscapePhone) {
+    grid-template-rows: 54px 54px 130px 78px;
+  }
+
+  @media (min-width: $bigScreen) {
+    grid-template-areas:
+      "name email"
+      "message message"
+      ". button";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 64px 130px;
+    column-gap: 20px;
+  }
+
+  &__name-input {
+    padding: 15px 20px;
+    border: 0;
+    background: #ffffff;
+    border-radius: 8px;
+    grid-area: name;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__email-input {
+    padding: 15px 20px;
+    border: 0;
+    background: #ffffff;
+    border-radius: 8px;
+    grid-area: email;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__message-input {
+    padding: 15px 20px;
+    border: 0;
+    background: #ffffff;
+    border-radius: 8px;
+    grid-area: message;
+    resize: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__save-button {
+    height: 44px;
+    padding: 0;
+    background-color: #222222;
+    border: 0;
+    border-radius: 8px;
+    margin: 30px 0 0;
+    grid-area: button;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: opacity 1s linear;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    @media (min-width: $landscapePhone) {
+      height: 48px;
+    }
+
+    @media (min-width: $bigScreen) {
+      height: 54px;
+      margin-left: calc(100% - 194px);
+      margin-top: 10px;
+      align-self: end;
+    }
+  }
+}
