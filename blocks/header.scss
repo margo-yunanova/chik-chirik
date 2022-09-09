@@ -17,7 +17,6 @@
     min-height: calc(640px - 30px - 130px);
   }
 
-
   &__conteiner {
     display: flex;
     flex-direction: column;
@@ -35,7 +34,6 @@
       max-width: 1440px;
       //min-height: calc(640px - 130px - 30px);
     }
-
   }
 
   &__logo {
@@ -59,7 +57,6 @@
     color: #ffffff;
     margin: 0;
     padding-bottom: 14px;
-
 
     @media (min-width: $landscapePhone) {
       font-size: 33px;
