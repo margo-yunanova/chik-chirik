@@ -7,12 +7,14 @@
 
   @media (min-width: $landscapePhone) {
     padding: 30px 119px;
+    max-width: 470px;
+    margin: 0 auto;
   }
 
   @media (min-width: $bigScreen) {
     padding: 60px;
     max-width: 980px;
-    margin: 0 auto;
+
   }
 
   &__text {

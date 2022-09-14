@@ -38,6 +38,13 @@
   }
 
   &_limited {
+
+    @media (min-width: $landscapePhone) {
+      margin: 0 auto;
+      max-width: 708px;
+      padding: 0 30px
+    }
+
     @media (min-width: $bigScreen) {
       margin: 0 auto;
       max-width: 1100px;

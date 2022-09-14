@@ -12,12 +12,18 @@
     "subtitle-left subtitle-right"
     "title-left title-right"
     "text-left text-right";
-  max-width: 1100px;
   overflow-x: auto;
+  position: relative;
 
   @media (min-width: $landscapePhone) {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 708px;
   }
+
+  @media (min-width: $bigScreen) {
+    max-width: 1100px;
+  }
+
 
   &__item {
     display: contents;

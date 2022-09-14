@@ -1,0 +1,10 @@
+.description__dots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 4px);
+  grid-template-rows: 24px;
+  grid-auto-flow: column;
+  grid-auto-columns: 4px;
+  column-gap: 4px;
+  align-items: end;
+  justify-content: center;
+}
