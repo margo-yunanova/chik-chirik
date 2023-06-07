@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-.description__dots {
+.scroll__dots {
   display: grid;
   grid-template-columns: repeat(auto-fit, 4px);
   grid-template-rows: 24px;
