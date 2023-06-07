@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .description__dots {
   display: grid;
   grid-template-columns: repeat(auto-fit, 4px);
@@ -7,4 +9,9 @@
   column-gap: 4px;
   align-items: end;
   justify-content: center;
+  padding-bottom: 70px;
+
+  @media (min-width: $bigScreen) {
+    padding-bottom: 120px;
+  }
 }

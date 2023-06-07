@@ -2,7 +2,6 @@
 
 .app-description {
   margin: 0 auto;
-  margin-top: 70px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 100%);
@@ -12,8 +11,17 @@
     "subtitle-left subtitle-right"
     "title-left title-right"
     "text-left text-right";
-  overflow-x: auto;
+  overflow-x: scroll;
   position: relative;
+
+  &::-webkit-scrollbar {
+    height: 1px;
+}
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #212121;
+    border-radius: 1px;
+  }
 
   @media (min-width: $landscapePhone) {
     grid-template-columns: repeat(2, 1fr);
