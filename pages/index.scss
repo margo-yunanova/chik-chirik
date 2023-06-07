@@ -1,6 +1,7 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts.css");
 @import "../blocks/_header.scss";
+@import "../blocks/main.scss";
 @import "../blocks/_page.scss";
 @import "../blocks/_app-description.scss";
 @import "../blocks/_app-promo.scss";
@@ -9,3 +10,4 @@
 @import "../blocks/_form.scss";
 @import "../blocks/_description__dot.scss";
 @import "../blocks/description__dots.scss";
+@import '../blocks/footer.scss'

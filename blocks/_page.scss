@@ -1,8 +1,15 @@
 .page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
   font-family: "Inter", Arial, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }

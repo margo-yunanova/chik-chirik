@@ -4,6 +4,7 @@
   background-color: #222222;
   border-radius: 10px;
   padding: 20px;
+  margin-bottom: 70px;
 
   @media (min-width: $landscapePhone) {
     padding: 30px 45px 50px 50px;
@@ -15,9 +16,10 @@
     padding-right: 220px;
     padding-bottom: 130px;
     min-height: calc(640px - 30px - 130px);
+    margin-bottom: 60px;
   }
 
-  &__conteiner {
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -31,8 +33,7 @@
     }
 
     @media (min-width: $bigScreen) {
-      max-width: 1440px;
-      //min-height: calc(640px - 130px - 30px);
+      max-width: 1100px;
     }
   }
 
@@ -40,10 +41,6 @@
     width: 40px;
     height: 40px;
     padding-bottom: 50px;
-
-    @media (min-width: $landscapePhone) {
-      //padding-top: 30px;
-    }
 
     @media (min-width: $bigScreen) {
       padding-bottom: 60px;
@@ -132,6 +129,12 @@
     text-align: center;
     color: #222222;
     cursor: pointer;
+    opacity: 1;
+    transition: opacity 1s linear;
+
+    &:hover {
+      opacity: 0.93;
+    }
 
     @media (min-width: $landscapePhone) {
       width: 240px;

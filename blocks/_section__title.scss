@@ -5,8 +5,7 @@
   font-size: 26px;
   line-height: 31px;
   color: #111111;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 0 20px 70px;
   margin: 0;
 
   @media (min-width: $landscapePhone) {
@@ -17,7 +16,7 @@
   @media (min-width: $bigScreen) {
     font-size: 60px;
     line-height: 68px;
-    padding-top: 120px;
+    padding-top: 0px;
     padding-bottom: 120px;
   }
 
@@ -42,11 +41,12 @@
     @media (min-width: $landscapePhone) {
       margin: 0 auto;
       max-width: 708px;
-      padding: 0 30px
+      padding: 0 0 70px
     }
 
     @media (min-width: $bigScreen) {
       margin: 0 auto;
+      padding: 0 0 120px;
       max-width: 1100px;
     }
   }
