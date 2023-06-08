@@ -528,7 +528,7 @@
   background-color: #d9d9d9;
   border-radius: 50%;
 }
-.scroll_dot:first-child {
+.scroll_dot_active {
   background-color: #212121;
 }
 @media (min-width: 795px) {
